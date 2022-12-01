@@ -1,0 +1,1280 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity; /*mandatory just snaps to nearest one. proximity snaps when its close*/
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: #ffeac9;
+}
+
+.logo {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header {
+    margin-left: 3em;
+    margin-top: 1em;
+    display: flex; /*make logo and nav next to each other rather than under*/
+    justify-content: space-between;
+    
+}
+
+/*.background {
+    background:#d83a56;
+    width: 150%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+}*/
+
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #d83a56;
+    height: 100vh;
+    width: 100%;
+    z-index: 4;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out; /*says what type of property should animate from one point to another*/
+
+    
+
+}
+
+ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin-top: 4em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*li {
+    float: left;
+    padding-left: 4em;
+}*/
+
+li a{
+    text-decoration: none;
+    color: black;
+    padding: .75em 2em;
+    display: block;
+    color: #ffeac9;
+}
+
+li a:hover {
+    background:#ffeac9;
+    color: #d83a56;
+}
+
+
+/*.contactPuzzle {
+    height: 3.8em;
+    float: right;
+    position: fixed;
+    top: 1em;
+    right: 3em;
+    z-index: -1;
+    fill: #d83a56;
+    transition: .5s;
+}
+
+.contactLink a{
+    color: white;
+}
+
+.contactLink a:hover {
+    color: #ffeac9;
+}*/
+
+
+
+
+
+.bottomBack {
+    height: 30%;
+    width: 100%;
+    background: #FF616D;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+/*nav h3, h2 {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}*/
+
+nav h3 {
+    color: white;
+    font-weight: 500;
+}
+
+nav h2 {
+    bottom: 5em;
+    color: #ffeac9;
+    font-weight: 400;
+}
+
+nav .socials {
+    position: absolute;
+    bottom: 1em;
+    fill: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+
+
+nav .close {
+    float: right;
+    margin: 2em;
+    width: 2.3em;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    float: right;
+    width: 2.3em;
+    right: 2em;
+    top: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.contactLink {
+    height: 3em;
+    width: 3em;
+    background-image: url('Vector\ 33.png');
+    background-size: cover;
+    background-position: center;
+}*/
+
+section {
+    height: 100vh;
+    width: 100%;
+    /*scroll-snap-align: end;*/
+}
+
+.landing {
+    overflow: hidden;
+    /*background: greenyellow;*/
+}
+
+.landing .content {
+    margin-left: 4em;
+    margin-top: 11em;
+}
+
+.landing h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.landing h1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: .2em;
+    color: #d83a56;
+}
+
+.landing h2{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: -.5em;
+    width: 85%;
+}
+
+
+
+.about {
+    /*background: #d83a56;*/
+    position: relative; /*so that my absolute content positions properly*/
+    /*scroll-snap-align: end;*/
+}
+
+.about h3{
+    font-weight: 400;
+    font-size: .7rem;
+    position: absolute;
+    margin-top: 26.9em;
+    margin-left: 15%;
+}
+
+.about p {
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 4em;
+    /*height: 18.5em;*/
+    width: 80%;
+    font-size: .9rem;
+}
+
+.about img {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 22em;
+    object-fit: cover;
+    margin-top: 17.5em;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*.projects {
+    background: #1A5F7A;
+    position: relative;
+}
+
+.slide-navigation {
+    float: right;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;
+    position: absolute;
+    top: 18.5em;
+    width: 100vh;
+
+}
+
+.navigation svg {
+    cursor: pointer;
+    margin-top: -1.5em;
+    
+
+}
+
+.navigation .puz1 {
+    margin-top: 0em;
+}
+
+.navigation svg:hover {
+    fill: #ffeac9;
+}
+
+
+.container {
+    height: 27.8em;
+    width: 47.8em;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-images {
+    height: 27.8em;
+    width: 47.5em;
+    display: flex;
+}
+
+.slide {
+    
+    transition: 2s;
+}
+
+.slider-images img {
+    height: 27.8em;
+    width: 47.5em;
+}
+
+
+/*.projects .container {
+    height: 27.5em;
+    width: 47.8em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.container img {
+    height: 27.5em;
+    width: 47.8em;
+}
+*/
+
+
+
+.projects {
+    background: #1A5F7A;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*scroll-snap-align: end;*/
+}
+
+.slider {
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    margin-top: -6em;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.description {
+    width: 20%;
+}
+
+.slide img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/*css for manual slide*/
+
+.slide-navigation {
+    /*float: right;*/
+    
+}
+
+/*.navigation-manual {
+    position: absolute;
+    width: 100vh;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /*stack radio buttons*/
+/*    float: right;
+    margin-left: auto;
+    margin-right: 1em;
+}
+*/
+
+.navigation-manual {
+    display: flex;
+    /*flex-direction: column;*/
+    margin-left: 30%;
+    position: absolute;
+    bottom: 1.5em;
+    left: 0em;
+    width: 0;
+
+}
+
+.navigation-manual svg {
+    cursor: pointer;
+    margin-top: -1.5em;
+    margin-right: -4em;
+
+}
+
+.navigation-manual .puz1b {
+    margin-left: .96em;
+    margin-top: -1.55em;
+}
+
+.navigation-manual .puz4b {
+    margin-left: .2em;
+}
+
+.puz1, .puz2, .puz3, .puz4 {
+    display: none;
+}
+
+.navigation .puz1 {
+    margin-top: 0em;
+}
+
+.navigation-manual svg:hover {
+    fill: #ffeac9;
+}
+
+
+
+
+
+
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+
+
+.description {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    top: 10em;
+}
+
+.dBox {
+    background: #d83a56;
+    height: 21em;
+    width: 22em;
+    position: absolute;
+    margin-top: -8em;
+    margin-right: 26em;
+}
+
+.dText {
+    background: white;
+    height: 14em;
+    width: 22em;
+    position: absolute;
+    margin-right: 22em;
+    margin-top: -12em;
+}
+
+.dText h1 {
+    padding-left: .7em;
+    
+}
+
+.dText p {
+    padding-left: 1em;
+    padding-right: 2em;
+    font-size: .9em;
+}
+
+.contact .info {
+    position: absolute;
+    left: 4em;
+    width: 80%;
+}
+
+.contact {
+    position: relative;
+    /*scroll-snap-align: end;*/
+}
+
+
+.contact h1 {
+    
+    font-size: 2rem;
+    margin-top: 2.9em;
+}
+
+.contact h2, p {
+    padding-top: 0em;
+}
+
+.contact h2 {
+    font-size: 1.2rem;
+}
+
+.contact p {
+    font-size: .9rem;
+}
+
+.socials {
+    margin-top: 21em;
+    height: 6em;
+    width: 6em;
+    display: flex;
+    cursor: pointer;
+}
+
+/*.socials:hover {
+    
+}*/
+
+.socials .insta, .socials .linkedin {
+    padding-left: 10px;
+}
+
+.insta {
+    width: 8em;
+}
+
+.emailStuff {
+    display: flex;
+}
+
+.emailIcon {
+    height: 1.5em;
+    width: 1.5em;
+    padding-top: .4em;
+}
+
+.emailStuff p {
+    padding-left: .2em;
+    margin-top: .5em;
+}
+
+
+
+form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 4em;
+    width: 80%;
+    top: 32em;
+    transform: translate(0, -50%);
+    font-size: .9rem;
+}
+
+form label {
+    padding-bottom: .5em;
+    font-weight: 600;
+}
+
+#emailLabel, #msgLabel {
+    padding-top: 1em;
+}
+
+form input, textarea {
+    background-color: #C4C4C4;
+    opacity: 50%;
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+}
+
+form input {
+    height: 30px;
+}
+
+button {
+    background-color: #d83a56;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 2em;
+    width: 30%;
+    margin-top: 1em;
+}
+
+.but 
+
+.sendIcon {
+    height: 1em;
+    padding-left: .2em;
+}
+
+
+.line-container {
+    display: none;
+}
+
+
+/*.line-container {
+    position: absolute;
+    top: 4em;
+    left: 6.05em;
+    width: 70%;
+    height: 120%;
+    /*text-align: center;*/
+  /*  overflow: hidden;
+    
+}
+
+.line-container svg {
+    display: inline-block;
+    height: 100%; /* help gonna give the svg responsiveness. so far here the svg is height of window and fixed when scrolling*/
+
+/*}*/
+
+
+
+
+@media only screen and (min-width: 700px){
+    .logo {
+        font-family: 'Big Shoulders Stencil Text', cursive;
+        font-weight: 400;
+        font-size: 3rem;
+        text-decoration: none;
+        color: black;
+        position: fixed;
+        z-index: 1;
+        left: unset;
+        transform: unset;
+    }
+    
+    header {
+        margin-left: 3em;
+        margin-top: 1em;
+        display: flex; /*make logo and nav next to each other rather than under*/
+        
+    }
+    
+    .background {
+        background: rgba(255, 234, 201, .3);
+        width: 150%;
+        height: 80px;
+        position: fixed;
+        z-index: 1;
+        transition: .5s;
+    }
+    
+    
+    nav {
+        /*position: fixed;*/
+        
+        position: fixed;
+        display: block;
+        transform: translateX(0);
+        right: 4.4em;
+        top: 2.3em;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        /*transition: .5s;*/
+        
+        background: none;
+    }
+
+    li a:hover {
+        background: none;
+    }
+    
+    ul {
+        list-style: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size: unset;
+    }
+    
+    li {
+        float: left;
+        padding-left: 4em;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: black;
+        padding: 0;
+    
+    }
+    
+    .contactPuzzle {
+        height: 3.8em;
+        float: right;
+        position: fixed;
+        top: -1.5em;
+        right: -1.3em;
+        z-index: -1;
+        fill: #d83a56;
+        transition: .5s;
+        opacity: 100%;
+    }
+    
+    .contactLink a{
+        color: white;
+    }
+    
+    .contactLink a:hover {
+        color: #ffeac9;
+    }
+
+    .close {
+        display: none;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .bottomBack {
+        display: none;
+    }
+
+
+
+
+
+
+    .about h3{
+        font-weight: 400;
+        font-size: .9rem;
+        position: absolute;
+        margin-top: 13.9em;
+        margin-left: 50%;
+    }
+    
+    .about p {
+        position: absolute;
+        margin-top: 15em;
+        margin-left: 4em;
+        /*height: 18.5em;*/
+        width: 40%;
+        font-size: 1.2rem;
+    }
+    
+    .about img {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        height: 30em;
+        object-fit: cover;
+        margin-top: 17.5em;
+        right: 0;
+        bottom: 0;
+    }
+
+
+
+
+
+
+
+
+    .projects {
+        background: #1A5F7A;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: end;
+    }
+    
+    .slider {
+        width: unset;
+        height: unset;
+        width: 900px;
+        height: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        
+        margin-top: 9em;
+    }
+    
+    .slides {
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    
+    .slides input {
+        display: none;
+    }
+    
+    .slide {
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .description {
+        width: 20%;
+    }
+    
+    .slide img {
+        width: 800px;
+        height: 500px;
+    }
+    
+    /*css for manual slide*/
+    
+    .slide-navigation {
+        float: right;
+        
+    }
+    
+    /*.navigation-manual {
+        position: absolute;
+        width: 100vh;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /*stack radio buttons*/
+    /*    float: right;
+        margin-left: auto;
+        margin-right: 1em;
+    }
+    */
+    
+    .navigation-manual {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3em;
+        position: absolute;
+        top: 18.5em;
+        left: unset;
+        right: 4em;
+        width: 0;
+    
+    }
+
+    .puz1, .puz2, .puz3, .puz4 {
+        display: unset;
+    }
+
+    .puz1b, .puz2b, .puz3b, .puz4b {
+        display: none;
+    }
+    
+    .navigation-manual {
+        cursor: pointer;
+        margin-top: -1.5em;
+        
+    
+    }
+    
+    .navigation .puz1 {
+        margin-top: 0em;
+    }
+    
+    .navigation-manual svg:hover {
+        fill: #ffeac9;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;;
+    }
+    
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .first {
+        margin-left: -60%;
+    }
+    
+    
+    
+    .description {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+    }
+    
+    .dBox {
+        background: #d83a56;
+        height: 21em;
+        width: 22em;
+        position: absolute;
+        margin-top: -47em;
+        margin-right: 20em;
+    }
+    
+    .dText {
+        background: white;
+        height: 21em;
+        width: 22em;
+        position: absolute;
+        margin-right: 16em;
+        margin-top: -51em;
+    }
+    
+    .dText h1 {
+        padding-left: .7em;
+        
+    }
+    
+    .dText p {
+        padding-left: 1em;
+        padding-right: 2em;
+    }
+
+
+
+
+
+
+
+    .contact .info {
+        position: absolute;
+        left: 4em;
+        width: 40%;
+    }
+    
+    .contact {
+        position: relative;
+        scroll-snap-align: end;
+    }
+    
+    
+    .contact h1 {
+        
+        font-size: 2.4rem;
+        margin-top: 4.9em;
+    }
+    
+    .contact h2, p {
+        padding-top: .6em;
+    }
+    
+    .socials {
+        margin-top: 1em;
+        height: 7em;
+        width: 7em;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    /*.socials:hover {
+        
+    }*/
+    
+    .socials .insta, .socials .linkedin {
+        padding-left: 10px;
+    }
+    
+    .insta {
+        width: 8em;
+    }
+    
+    .emailStuff {
+        display: flex;
+    }
+    
+    .emailIcon {
+        height: 1.5em;
+        width: 1.5em;
+        padding-top: unset;
+        padding-top: .8em;
+    }
+    
+    .emailStuff p {
+        padding-left: .2em;
+    }
+    
+    
+    
+    form {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: unset;
+        width: unset;
+        font-size: unset;
+        top: unset;
+        right: 6em;
+        width: 35%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    form label {
+        padding-bottom: .5em;
+        font-weight: 600;
+    }
+    
+    #emailLabel, #msgLabel {
+        padding-top: 2em;
+    }
+    
+    form input, textarea {
+        background-color: #C4C4C4;
+        opacity: 50%;
+        outline: none;
+        border: 0;
+        border-radius: 2px;
+    }
+    
+    form input {
+        height: 30px;
+    }
+    
+    button {
+        background-color: #d83a56;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        height: 2em;
+        width: 30%;
+        margin-top: 3em;
+    }
+    
+    .but 
+    
+    .sendIcon {
+        height: 1em;
+        padding-left: .2em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .line-container {
+        display: unset;
+        position: absolute;
+        top: 4em;
+        left: 6.05em;
+        width: 70%;
+        height: 120%;
+        /*text-align: center;*/
+        overflow: hidden;
+        
+    }
+    
+    .line-container svg {
+        display: inline-block;
+        height: 100%; /* help gonna give the svg responsiveness. so far here the svg is height of window and fixed when scrolling*/
+    
+    }
+
+
+
+    .description2 {
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*header {
+    margin-left: 3em;
+    margin-top: 1em;
+    display: flex; /*make logo and nav next to each other rather than under*/
+/*    justify-content: space-between;
+    
+}
+
+/*.background {
+    background:#d83a56;
+    width: 150%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+}*/
+
+
+/*nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #d83a56;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out; /*says what type of property should animate from one point to another*/
+
+    
+
+/*}
+
+ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin-top: 8em;
+}
+
+li {
+    float: left;
+    padding-left: 4em;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    padding: .75em 2em;
+    display: block;
+}
+
+li a:hover {
+    background: grey;
+}
+
+.contactPuzzle {
+    display: none;
+}
+/*.contactPuzzle {
+    height: 3.8em;
+    float: right;
+    position: fixed;
+    top: 1em;
+    right: 3em;
+    z-index: -1;
+    fill: #d83a56;
+    transition: .5s;
+}
+
+.contactLink a{
+    color: white;
+}
+
+.contactLink a:hover {
+    color: #ffeac9;
+}*/
+
+/*nav .close {
+    float: right;
+    margin: 2em;
+    width: 2.3em;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    float: right;
+    width: 2.3em;
+    right: 2em;
+    top: 2em;
+    cursor: pointer;
+    
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+*/
+
+
+
+
+
+
+/* thank you section */
+
+.contentthanks {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.title{
+    width: 100%;
+	
+	padding: 0;
+    margin: 0;
+    text-align: center;
+    
+    
+}
+
+.gif {
+    /* margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  padding: 20px;
+  margin: 0;
+  
+}
+
+.description2 {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+}
+
