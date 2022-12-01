@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mandisa.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    
+    <!--wrap everything-->
+    <div class="wrapper">
+
+        <!--header-->
+        <div class="background" id="background">
+        <header id="header">
+
+            
+
+            <!--logo-->
+            <a href="#landing" class="logo" id="logo">&ltM&gt</a> <!--&lt means < and &gt means > -->
+
+            <!--nav bar-->
+            <nav id="navbar">
+
+                <!--close button for if nav is mobile version-->
+                <svg class="close" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="29" cy="27.5" rx="20" ry="19.5" fill="#FFEAC9"/>
+                    <path d="M36.0017 18.0489L38.8853 20.9326L22.3457 37.4722L19.462 34.5886L36.0017 18.0489ZM22.2297 17.734L39.7969 35.3012L36.7309 38.3672L19.1637 20.8L22.2297 17.734Z" fill="#D83A56"/>
+                    </svg>
+
+
+
+                    <!--bottom bar contact details-->
+
+                    <div class="bottomBack">
+                
+
+                    <h3>Contact</h3>
+                    <h2>bridgettemanzi@gmail.com</h2>
+                    <div class="socials">
+                        <svg class="behance" viewBox="0 0 31 36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9051 20.6016C12.9051 21.9586 11.9364 22.3875 10.7462 22.3875H7.62545V18.668H10.8085C12.0955 18.675 12.9051 19.2164 12.9051 20.6016V20.6016ZM12.3723 14.8148C12.3723 13.5703 11.4243 13.275 10.3725 13.275H7.63237V16.425H10.5871C11.6319 16.425 12.3723 15.9609 12.3723 14.8148V14.8148ZM21.527 16.4461C20.2607 16.4461 19.4165 17.2477 19.3335 18.5344H23.6375C23.5199 17.2336 22.8556 16.4461 21.527 16.4461ZM31 5.625V30.375C31 32.2383 29.5123 33.75 27.6786 33.75H3.32143C1.48772 33.75 0 32.2383 0 30.375V5.625C0 3.76172 1.48772 2.25 3.32143 2.25H27.6786C29.5123 2.25 31 3.76172 31 5.625ZM18.8007 13.0078H24.1842V11.6789H18.8007V13.0078ZM15.8252 20.7633C15.8252 19.0687 15.0364 17.6062 13.4033 17.1352C14.5935 16.5586 15.2163 15.8906 15.2163 14.5336C15.2163 11.8477 13.2442 11.1937 10.9676 11.1937H4.70536V24.6938H11.1475C13.5625 24.6797 15.8252 23.5055 15.8252 20.7633V20.7633ZM26.2946 19.7227C26.2946 16.8328 24.627 14.4211 21.617 14.4211C18.683 14.4211 16.6971 16.657 16.6971 19.5961C16.6971 22.6406 18.5862 24.7289 21.617 24.7289C23.9143 24.7289 25.402 23.6812 26.1217 21.4383H23.7897C23.5337 22.275 22.5027 22.7109 21.7 22.7109C20.15 22.7109 19.3404 21.7898 19.3404 20.2289H26.2739C26.2808 20.0672 26.2946 19.8914 26.2946 19.7227Z" />
+                            </svg>
+    
+                        <svg class="insta" viewBox="0 0 39 39"  xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5001 14.4231C16.7046 14.4231 14.4232 16.7045 14.4232 19.5C14.4232 22.2955 16.7046 24.5768 19.5001 24.5768C22.2956 24.5768 24.5769 22.2955 24.5769 19.5C24.5769 16.7045 22.2956 14.4231 19.5001 14.4231ZM34.7268 19.5C34.7268 17.3976 34.7459 15.3143 34.6278 13.2158C34.5097 10.7783 33.9537 8.615 32.1713 6.83258C30.385 5.04635 28.2256 4.4941 25.7881 4.37604C23.6857 4.25797 21.6024 4.27701 19.5039 4.27701C17.4015 4.27701 15.3182 4.25797 13.2197 4.37604C10.7822 4.4941 8.61891 5.05016 6.83648 6.83258C5.05025 8.61881 4.49801 10.7783 4.37994 13.2158C4.26187 15.3181 4.28092 17.4014 4.28092 19.5C4.28092 21.5985 4.26187 23.6856 4.37994 25.7841C4.49801 28.2216 5.05406 30.3849 6.83648 32.1673C8.62272 33.9536 10.7822 34.5058 13.2197 34.6239C15.322 34.742 17.4053 34.7229 19.5039 34.7229C21.6062 34.7229 23.6895 34.742 25.7881 34.6239C28.2256 34.5058 30.3888 33.9498 32.1713 32.1673C33.9575 30.3811 34.5097 28.2216 34.6278 25.7841C34.7497 23.6856 34.7268 21.6023 34.7268 19.5V19.5ZM19.5001 27.3114C15.1773 27.3114 11.6886 23.8227 11.6886 19.5C11.6886 15.1772 15.1773 11.6885 19.5001 11.6885C23.8228 11.6885 27.3115 15.1772 27.3115 19.5C27.3115 23.8227 23.8228 27.3114 19.5001 27.3114ZM27.6314 13.1929C26.6221 13.1929 25.8071 12.3779 25.8071 11.3686C25.8071 10.3593 26.6221 9.5443 27.6314 9.5443C28.6407 9.5443 29.4557 10.3593 29.4557 11.3686C29.456 11.6083 29.409 11.8456 29.3175 12.0671C29.2259 12.2886 29.0915 12.4898 28.9221 12.6593C28.7526 12.8287 28.5514 12.9631 28.3299 13.0547C28.1084 13.1462 27.8711 13.1932 27.6314 13.1929V13.1929Z" />
+                        </svg>
+    
+                        <svg class="linkedin" viewBox="0 0 34 34"  xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.4165 4.02034C1.4165 3.32976 1.69084 2.66747 2.17915 2.17915C2.66746 1.69084 3.32976 1.41651 4.02034 1.41651H29.9765C30.3187 1.41595 30.6577 1.4829 30.974 1.61352C31.2904 1.74414 31.5778 1.93587 31.8199 2.17773C32.0621 2.4196 32.2541 2.70684 32.3851 3.02302C32.516 3.3392 32.5834 3.67811 32.5832 4.02034V29.9765C32.5835 30.3188 32.5164 30.6578 32.3856 30.9741C32.2549 31.2905 32.063 31.5779 31.821 31.82C31.5791 32.0621 31.2917 32.2542 30.9755 32.3851C30.6592 32.5161 30.3202 32.5834 29.9779 32.5832H4.02034C3.67828 32.5832 3.33957 32.5158 3.02357 32.3848C2.70756 32.2539 2.42046 32.062 2.17865 31.82C1.93684 31.5781 1.74507 31.2909 1.6143 30.9748C1.48353 30.6587 1.41632 30.32 1.4165 29.9779V4.02034ZM13.7528 13.2995H17.9731V15.4188C18.5823 14.2005 20.1406 13.104 22.4823 13.104C26.9718 13.104 28.0357 15.5308 28.0357 19.9833V28.2312H23.4924V20.9977C23.4924 18.4618 22.8833 17.031 21.3363 17.031C19.19 17.031 18.2975 18.5738 18.2975 20.9977V28.2312H13.7528V13.2995ZM5.96117 28.0371H10.5058V13.104H5.96117V28.0357V28.0371ZM11.1561 8.23351C11.1647 8.62263 11.0954 9.00954 10.9524 9.37154C10.8094 9.73353 10.5956 10.0633 10.3234 10.3416C10.0512 10.6198 9.72624 10.8408 9.36748 10.9918C9.00872 11.1427 8.62343 11.2204 8.23421 11.2204C7.845 11.2204 7.45971 11.1427 7.10094 10.9918C6.74218 10.8408 6.41718 10.6198 6.14501 10.3416C5.87284 10.0633 5.65899 9.73353 5.516 9.37154C5.37301 9.00954 5.30377 8.62263 5.31234 8.23351C5.32916 7.46972 5.64438 6.74288 6.19051 6.20865C6.73663 5.67441 7.47024 5.37527 8.23421 5.37527C8.99819 5.37527 9.73179 5.67441 10.2779 6.20865C10.824 6.74288 11.1393 7.46972 11.1561 8.23351V8.23351Z"/>
+                        </svg>
+                            
+    
+                    </div>
+
+                    </div>
+                    
+
+                <!--unordered list-->
+                <ul>
+                    <!--list items-->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li class="contactLink"><a href="#contact">Contact</a></li>
+                </ul>
+                <svg class="contactPuzzle" id="contactPuzzle" viewBox="0 0 149 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.5 24.5002H3V45.5002C3 45.5002 12.7402 42.4328 17.5 45.5002C24.8859 50.26 24.8859 63.2404 17.5 68.0002C12.7402 71.0676 3 68.0002 3 68.0002V88.0002H46.5C46.5 88.0002 44.2497 78.983 46.5 74.0002C51.4828 62.9669 72.5172 62.9669 77.5 74.0002C79.7503 78.983 77.5 88.0002 77.5 88.0002H125.5V68.0002C125.5 68.0002 136.015 71.4342 141 68.0002C148.236 63.0154 148.236 50.485 141 45.5002C136.015 42.0662 125.5 45.5002 125.5 45.5002V24.5002H77.5C77.5 24.5002 79.4633 16.182 77.5 11.5002C72.8182 0.335874 51.1818 0.335874 46.5 11.5002C44.5367 16.182 46.5 24.5002 46.5 24.5002Z" stroke="#D83A56" stroke-width="5"/>
+                </svg>
+
+                
+                    
+                    
+                
+            </nav>
+            <!--add hamburger menu icon for mobile version-->
+
+            <svg class="menu" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.5" x2="12" y2="1.5" stroke="black" stroke-width="3"/>
+                <line x1="1.31134e-07" y1="8.42285" x2="24" y2="8.42285" stroke="black" stroke-width="3"/>
+                <line x1="12" y1="15.3462" x2="24" y2="15.3462" stroke="black" stroke-width="3"/>
+                </svg>
+                
+            
+
+        </header>
+        </div>
+
+        <!--puzzle path for animation-->
+
+        <div class="line-container">
+           <!-- <svg viewBox="0 0 827 1203" fill="none" preserveAspectRatio="xMidYMax meet"> <!--want to be able to scale the svg to the max size of browser and have it be responsive. without aspectratio might squash svg-->
+            <!--    <path class="linepath" d="M2.5 0.5V184H626V276.5H722.5V357.5C722.5 357.5 781.372 335.597 805 357.5C830.49 381.128 830.49 422.872 805 446.5C781.372 468.403 722.5 446.5 722.5 446.5V539.5H645C645 539.5 674.917 612.906 645 635.5C622.406 652.563 595.094 652.563 572.5 635.5C542.583 612.906 572.5 539.5 572.5 539.5H544V1096.5L688 1190M688 1190V1170.5L700.5 1199L669.5 1194.5L688 1190Z" stroke="#D83A56" stroke-width="5"/>
+            </svg>-->
+
+            <!--<svg viewBox="0 0 827 1205" fill="none" fill="none" preserveAspectRatio="xMidYMax meet">
+                <path class="linepath" d="M3 0V185.5H626V278.5H722V359C722 359 780.811 337.163 804.5 359C830.199 382.689 830.199 424.811 804.5 448.5C780.811 470.337 722 448.5 722 448.5V541.5H644.5C644.5 541.5 674.567 615.106 644.5 637.5C622.106 654.179 595.394 654.179 573 637.5C542.933 615.106 573 541.5 573 541.5H543.5V1099L687 1189.5V1169L700 1201.5L668.5 1195.5L687 1192" stroke="#D83A56" stroke-width="5"/>
+                </svg>-->
+
+                <svg viewBox="0 0 827 1428" fill="none" preserveAspectRatio="xMidYMax meet">
+                    <path class="linepath" d="M3 0V185.5H626V278.5H722V359C722 359 780.811 337.163 804.5 359C830.199 382.689 830.199 424.811 804.5 448.5C780.811 470.337 722 448.5 722 448.5V541.5H644.5C644.5 541.5 674.567 615.106 644.5 637.5C622.106 654.179 595.394 654.179 573 637.5C542.933 615.106 573 541.5 573 541.5H543.5V1326L687 1412V1391.5L700 1424L668.5 1418L687 1414.5" stroke="black" stroke-width="5"/>
+                    </svg>
+                    
+                
+                
+        </div>
+        
+
+
+
+        <!--section: landing-->
+        <section class="landing" id="landing">
+            <div class="content">
+            <h3>Hey, my name is</h3>
+            <h1>Mandisa B. Manzi</h1>
+            <h2>I'm a front end developer. I like to bring ideas to life and create
+                experiences that users will love.
+            </h2>
+            </div>
+        </section>
+
+        <!--section: about-->
+        <section class="about" id="about">
+            <h3>This is me</h3>
+            <p>In 2021, I graduated from University of Westminster in the middle of a pandemic 
+                with a degree in Digital Media Development Bsc.
+                So what can I do, you ask?
+                With the power of HTML, CSS and JavaScript, I can bring your ideas to life. 
+                I have a passion for creating websites that make a difference. 
+                A website is not only about function to me, it is also about the experience the user gets when they visit the site.
+            </p>
+            <img src="me.png" alt="me">
+        </section>
+
+        <!--section: projects-->
+        <section class="projects" id="projects">
+            <!--<div class="container">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slider-images">
+                    <div class="slide first">
+                        <img src="eyerizfilm website.png" alt="1">
+                    </div>
+                    <div class="slide">
+                        <img src="attune site.png" alt="1">
+                    </div>
+                    <div class="slide">
+                        <img src="3.jpg" alt="1">
+                    </div>
+                    <div class="slide">
+                        <img src="4.jpg" alt="1">
+                    </div>
+                </div>
+
+               <!-- <img src="" alt="project pic">
+                <div class="description">
+                    <div class="dBox"></div>
+                    <div class="dText">
+                        <h1>Project Name</h1>
+                        <p>project description. This is were i describe the project and purpose 
+                            and blah blah i’ll just write whatever maybe even some 
+                            lorem ipsum and thenm things there</p>
+                    </div>
+                </div>-->
+<!--                <div class="indicator"></div>
+            </div>
+
+            <div class="slide-navigation">
+                <!--radio set up-->
+                
+                <!--navigation -->
+ <!--               <div class="navigation">
+                    <label for="radio1" class="manual-btn">
+                        <svg class="puz1" width="64" height="43" viewBox="0 0 64 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 1H63V42H47.273C47.273 42 51.1825 31.5828 47.273 27.4923C43.1934 23.224 36.2546 23.224 32.175 27.4923C28.2654 31.5828 32.175 42 32.175 42H17.7061V27.4923C17.7061 27.4923 7.68807 31.3243 3.86632 27.4923C0.0445633 23.6603 0.0445633 17.4474 3.86632 13.6154C7.68807 9.78338 17.7061 13.6154 17.7061 13.6154V1Z" stroke="#FFEAC9" stroke-width="2"/>
+                        </svg>
+                    </label>
+                
+                    <label for="radio2" class="manual-btn">
+                        <svg class="puz2" width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 30.6952V18.1154H32.4895C32.4895 18.1154 28.5709 8.30647 32.175 4.27748C36.1057 -0.116652 43.2888 -0.0682677 47.273 4.27748C50.9251 8.26108 47.273 18.1154 47.273 18.1154H63V59H47.273C47.273 59 51.1825 48.6121 47.273 44.5331C43.1934 40.2768 36.2546 40.2768 32.175 44.5331C28.2654 48.6121 32.175 59 32.175 59H17.7061V44.5331C17.7061 44.5331 7.68807 48.3544 3.86632 44.5331C0.0445595 40.7119 0.0445595 34.5165 3.86632 30.6952C7.68807 26.874 17.7061 30.6952 17.7061 30.6952Z" stroke="#FFEAC9" stroke-width="2"/>
+                        </svg>
+                    </label>
+                
+                    <label for="radio3" class="manual-btn">
+                        <svg class="puz3" width="64" height="78" viewBox="0 0 64 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 30.829V18.1925H32.4895C32.4895 18.1925 28.5709 8.33939 32.175 4.29225C36.1057 -0.121682 43.2888 -0.0730807 47.273 4.29225C50.9251 8.29379 47.273 18.1925 47.273 18.1925H63V59.2613H47.273C47.273 59.2613 51.1825 69.696 47.273 73.7934C43.1934 78.0689 36.2546 78.0689 32.175 73.7934C28.2654 69.696 32.175 59.2613 32.175 59.2613H17.7061V44.7293C17.7061 44.7293 7.68807 48.5677 3.86632 44.7293C0.0445595 40.8908 0.0445595 34.6675 3.86632 30.829C7.68807 26.9906 17.7061 30.829 17.7061 30.829Z" stroke="#FFEAC9" stroke-width="2"/>
+                        </svg>
+                    </label>
+                
+                    <label for="radio4" class="manual-btn">
+                        <svg class="puz4" width="64" height="43" viewBox="0 0 64 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 13.6154V1H32.4895C32.4895 1 28.3105 11.3725 32.175 15.5077C36.2066 19.8216 43.1934 19.776 47.273 15.5077C51.1825 11.4172 47.273 1 47.273 1H63V42H47.273C47.273 42 51.1825 31.5828 47.273 27.4923C43.1934 23.224 36.2546 23.224 32.175 27.4923C28.2654 31.5828 32.175 42 32.175 42H17.7061V27.4923C17.7061 27.4923 7.68807 31.3243 3.86632 27.4923C0.0445633 23.6603 0.0445633 17.4474 3.86632 13.6154C7.68807 9.78338 17.7061 13.6154 17.7061 13.6154Z" stroke="#FFEAC9" stroke-width="2"/>
+                         </svg>
+                    </label>
+                
+            </div> -->
+
+
+
+
+<div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="eyerizfilm website.png" alt="1">
+                        <div class="description">
+                            <div class="dBox"></div>
+                            <div class="dText">
+                                <h1>Eyeriz Film</h1>
+                                <p>project description. This is were i describe the project and purpose 
+                                    and blah blah i’ll just write whatever maybe even some 
+                                    lorem ipsum and thenm things there</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="attune site.png" alt="1">
+                        <div class="description">
+                            <div class="dBox"></div>
+                            <div class="dText">
+                                <h1>Attune</h1>
+                                <p>project description. This is were i describe the project and purpose 
+                                    and blah blah i’ll just write whatever maybe even some 
+                                    lorem ipsum and thenm things there</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="3.jpg" alt="1">
+                    </div>
+                    <div class="slide">
+                        <img src="4.jpg" alt="1">
+                    </div>
+                    <!--slide images end-->
+
+                    
+
+
+
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-bt2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                </div>
+                <!--manual nav start-->
+
+                <div class="slide-navigation">
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn">
+                        <svg class="puz1" width="64" height="43" viewBox="0 0 64 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 1H63V42H47.273C47.273 42 51.1825 31.5828 47.273 27.4923C43.1934 23.224 36.2546 23.224 32.175 27.4923C28.2654 31.5828 32.175 42 32.175 42H17.7061V27.4923C17.7061 27.4923 7.68807 31.3243 3.86632 27.4923C0.0445633 23.6603 0.0445633 17.4474 3.86632 13.6154C7.68807 9.78338 17.7061 13.6154 17.7061 13.6154V1Z" stroke="#FFEAC9" stroke-width="2"/>
+                        </svg>
+
+                        <svg class="puz1b" width="45" height="66" viewBox="0 0 45 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.50391 18.8209L1.50391 64.8516H43.5039V48.8687C43.5039 48.8687 32.8366 52.8301 28.6424 48.8687C24.2573 44.727 24.2573 37.6668 28.6424 33.5251C32.8366 29.5638 43.5039 33.5251 43.5039 33.5251V18.8209H28.6424C28.6424 18.8209 32.5793 8.63611 28.6424 4.75599C24.7131 0.883423 18.3563 0.883423 14.427 4.75599C10.49 8.63611 14.427 18.8209 14.427 18.8209H1.50391Z" stroke="#FFEAC9" stroke-width="2"/>
+                            </svg>
+                            
+                            
+                            
+                         <br>   
+                    </label>
+                    <label for="radio2" class="manual-btn">
+                        <svg class="puz2" width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 30.6952V18.1154H32.4895C32.4895 18.1154 28.5709 8.30647 32.175 4.27748C36.1057 -0.116652 43.2888 -0.0682677 47.273 4.27748C50.9251 8.26108 47.273 18.1154 47.273 18.1154H63V59H47.273C47.273 59 51.1825 48.6121 47.273 44.5331C43.1934 40.2768 36.2546 40.2768 32.175 44.5331C28.2654 48.6121 32.175 59 32.175 59H17.7061V44.5331C17.7061 44.5331 7.68807 48.3544 3.86632 44.5331C0.0445595 40.7119 0.0445595 34.5165 3.86632 30.6952C7.68807 26.874 17.7061 30.6952 17.7061 30.6952Z" stroke="#FFEAC9" stroke-width="2"/>
+                        </svg>
+
+                        <svg class="puz2b" width="61" height="66" viewBox="0 0 61 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.1812 18.1272L18.5968 18.1272L18.5968 33.1445C18.5968 33.1445 8.77612 29.1386 4.7539 32.825C0.386239 36.8281 0.434143 44.1051 4.7539 48.1618C8.73099 51.8968 18.5968 48.1618 18.5968 48.1618L18.5968 64.1377L59.4961 64.1377V48.1618C59.4961 48.1618 49.0959 52.1597 45.024 48.1618C40.7935 44.0083 40.7935 36.9785 45.024 32.825C49.0959 28.8272 59.4961 32.825 59.4961 32.825V18.1272H45.024C45.024 18.1272 48.8217 7.95914 45.024 4.06846C41.2098 0.160778 34.9954 0.160778 31.1812 4.06846C27.3835 7.95914 31.1812 18.1272 31.1812 18.1272Z" stroke="#FFEAC9" stroke-width="2"/>
+                            </svg>
+                            
+                            
+                            
+                    </label>
+                    <label for="radio3" class="manual-btn">
+                        <svg class="puz3" width="64" height="78" viewBox="0 0 64 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 30.829V18.1925H32.4895C32.4895 18.1925 28.5709 8.33939 32.175 4.29225C36.1057 -0.121682 43.2888 -0.0730807 47.273 4.29225C50.9251 8.29379 47.273 18.1925 47.273 18.1925H63V59.2613H47.273C47.273 59.2613 51.1825 69.696 47.273 73.7934C43.1934 78.0689 36.2546 78.0689 32.175 73.7934C28.2654 69.696 32.175 59.2613 32.175 59.2613H17.7061V44.7293C17.7061 44.7293 7.68807 48.5677 3.86632 44.7293C0.0445595 40.8908 0.0445595 34.6675 3.86632 30.829C7.68807 26.9906 17.7061 30.829 17.7061 30.829Z" stroke="#FFEAC9" stroke-width="2"/>
+                        </svg>
+
+                        <svg class="puz3b" width="80" height="66" viewBox="0 0 80 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.7285 18.0177L18.9273 18.0177L18.9273 33.0406C18.9273 33.0406 8.94782 29.0645 4.84599 32.721C0.367839 36.713 0.417193 44.0171 4.84599 48.0636C8.90157 51.769 18.9273 48.0636 18.9273 48.0636L18.9273 64.0454L60.5312 64.0454V48.0636C60.5312 48.0636 71.0997 52.0303 75.2525 48.0636C79.5903 43.9201 79.5903 36.8644 75.2525 32.721C71.0997 28.7543 60.5312 32.721 60.5312 32.721V18.0177H45.8098C45.8098 18.0177 49.7042 7.83537 45.8098 3.95369C41.9194 0.0759811 35.6189 0.0759811 31.7285 3.95369C27.8341 7.83537 31.7285 18.0177 31.7285 18.0177Z" stroke="#FFEAC9" stroke-width="2"/>
+                            </svg>
+                            
+                            
+                            
+                    </label>
+                    <label for="radio4" class="manual-btn">
+                        <svg class="puz4" width="64" height="43" viewBox="0 0 64 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7061 13.6154V1H32.4895C32.4895 1 28.3105 11.3725 32.175 15.5077C36.2066 19.8216 43.1934 19.776 47.273 15.5077C51.1825 11.4172 47.273 1 47.273 1H63V42H47.273C47.273 42 51.1825 31.5828 47.273 27.4923C43.1934 23.224 36.2546 23.224 32.175 27.4923C28.2654 31.5828 32.175 42 32.175 42H17.7061V27.4923C17.7061 27.4923 7.68807 31.3243 3.86632 27.4923C0.0445633 23.6603 0.0445633 17.4474 3.86632 13.6154C7.68807 9.78338 17.7061 13.6154 17.7061 13.6154Z" stroke="#FFEAC9" stroke-width="2"/>
+                         </svg>
+
+                         <svg class="puz4b" width="45" height="66" viewBox="0 0 45 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4192 18.1643H1.49609L1.49609 33.1733C1.49609 33.1733 12.147 28.8553 16.3576 32.854C20.6969 36.9748 20.6515 44.0142 16.3576 48.1824C12.192 52.226 1.49609 48.1824 1.49609 48.1824L1.49609 64.1494H43.4961V48.1824C43.4961 48.1824 32.8002 52.226 28.6346 48.1824C24.3406 44.0142 24.3406 37.0221 28.6346 32.854C32.8002 28.8103 43.4961 32.854 43.4961 32.854V18.1643H28.6346C28.6346 18.1643 32.4885 8.01699 28.6346 4.11325C24.7332 0.161465 18.3206 0.161465 14.4192 4.11325C10.5652 8.01699 14.4192 18.1643 14.4192 18.1643Z" stroke="#FFEAC9" stroke-width="2"/>
+                            </svg>
+                            
+                            
+                            
+                    </label>
+        
+                </div>
+                </div>
+                <!--manual nav end-->
+            </div>
+            <!--image slider end-->
+
+            
+            
+
+</div>
+
+
+
+        </section>
+
+        <!--section: contact-->
+
+        <section class="contact" id="contact">
+
+            <div class="info">
+                <h1>Contact</h1>
+                <h2>Let's connect</h2>
+                <p>Wether you want to tell me your exciting website idea or just want a quick chat.</p>
+
+                <div class="emailStuff">
+                    <svg class="emailIcon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 6H4C3.46957 6 2.96086 6.21071 2.58579 6.58579C2.21071 6.96086 2 7.46957 2 8V24C2 24.5304 2.21071 25.0391 2.58579 25.4142C2.96086 25.7893 3.46957 26 4 26H28C28.5304 26 29.0391 25.7893 29.4142 25.4142C29.7893 25.0391 30 24.5304 30 24V8C30 7.46957 29.7893 6.96086 29.4142 6.58579C29.0391 6.21071 28.5304 6 28 6V6ZM25.8 8L16 14.78L6.2 8H25.8ZM4 24V8.91L15.43 16.82C15.5974 16.9361 15.7963 16.9984 16 16.9984C16.2037 16.9984 16.4026 16.9361 16.57 16.82L28 8.91V24H4Z" fill="black"/>
+                        </svg>
+                <p>bridgettemanzi@gmail.com</p>
+                </div>
+
+                <div class="socials">
+                    <svg class="behance" viewBox="0 0 31 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9051 20.6016C12.9051 21.9586 11.9364 22.3875 10.7462 22.3875H7.62545V18.668H10.8085C12.0955 18.675 12.9051 19.2164 12.9051 20.6016V20.6016ZM12.3723 14.8148C12.3723 13.5703 11.4243 13.275 10.3725 13.275H7.63237V16.425H10.5871C11.6319 16.425 12.3723 15.9609 12.3723 14.8148V14.8148ZM21.527 16.4461C20.2607 16.4461 19.4165 17.2477 19.3335 18.5344H23.6375C23.5199 17.2336 22.8556 16.4461 21.527 16.4461ZM31 5.625V30.375C31 32.2383 29.5123 33.75 27.6786 33.75H3.32143C1.48772 33.75 0 32.2383 0 30.375V5.625C0 3.76172 1.48772 2.25 3.32143 2.25H27.6786C29.5123 2.25 31 3.76172 31 5.625ZM18.8007 13.0078H24.1842V11.6789H18.8007V13.0078ZM15.8252 20.7633C15.8252 19.0687 15.0364 17.6062 13.4033 17.1352C14.5935 16.5586 15.2163 15.8906 15.2163 14.5336C15.2163 11.8477 13.2442 11.1937 10.9676 11.1937H4.70536V24.6938H11.1475C13.5625 24.6797 15.8252 23.5055 15.8252 20.7633V20.7633ZM26.2946 19.7227C26.2946 16.8328 24.627 14.4211 21.617 14.4211C18.683 14.4211 16.6971 16.657 16.6971 19.5961C16.6971 22.6406 18.5862 24.7289 21.617 24.7289C23.9143 24.7289 25.402 23.6812 26.1217 21.4383H23.7897C23.5337 22.275 22.5027 22.7109 21.7 22.7109C20.15 22.7109 19.3404 21.7898 19.3404 20.2289H26.2739C26.2808 20.0672 26.2946 19.8914 26.2946 19.7227Z" fill="black"/>
+                        </svg>
+
+                    <svg class="insta" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5001 14.4231C16.7046 14.4231 14.4232 16.7045 14.4232 19.5C14.4232 22.2955 16.7046 24.5768 19.5001 24.5768C22.2956 24.5768 24.5769 22.2955 24.5769 19.5C24.5769 16.7045 22.2956 14.4231 19.5001 14.4231ZM34.7268 19.5C34.7268 17.3976 34.7459 15.3143 34.6278 13.2158C34.5097 10.7783 33.9537 8.615 32.1713 6.83258C30.385 5.04635 28.2256 4.4941 25.7881 4.37604C23.6857 4.25797 21.6024 4.27701 19.5039 4.27701C17.4015 4.27701 15.3182 4.25797 13.2197 4.37604C10.7822 4.4941 8.61891 5.05016 6.83648 6.83258C5.05025 8.61881 4.49801 10.7783 4.37994 13.2158C4.26187 15.3181 4.28092 17.4014 4.28092 19.5C4.28092 21.5985 4.26187 23.6856 4.37994 25.7841C4.49801 28.2216 5.05406 30.3849 6.83648 32.1673C8.62272 33.9536 10.7822 34.5058 13.2197 34.6239C15.322 34.742 17.4053 34.7229 19.5039 34.7229C21.6062 34.7229 23.6895 34.742 25.7881 34.6239C28.2256 34.5058 30.3888 33.9498 32.1713 32.1673C33.9575 30.3811 34.5097 28.2216 34.6278 25.7841C34.7497 23.6856 34.7268 21.6023 34.7268 19.5V19.5ZM19.5001 27.3114C15.1773 27.3114 11.6886 23.8227 11.6886 19.5C11.6886 15.1772 15.1773 11.6885 19.5001 11.6885C23.8228 11.6885 27.3115 15.1772 27.3115 19.5C27.3115 23.8227 23.8228 27.3114 19.5001 27.3114ZM27.6314 13.1929C26.6221 13.1929 25.8071 12.3779 25.8071 11.3686C25.8071 10.3593 26.6221 9.5443 27.6314 9.5443C28.6407 9.5443 29.4557 10.3593 29.4557 11.3686C29.456 11.6083 29.409 11.8456 29.3175 12.0671C29.2259 12.2886 29.0915 12.4898 28.9221 12.6593C28.7526 12.8287 28.5514 12.9631 28.3299 13.0547C28.1084 13.1462 27.8711 13.1932 27.6314 13.1929V13.1929Z" fill="black"/>
+                    </svg>
+
+                    <svg class="linkedin" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.4165 4.02034C1.4165 3.32976 1.69084 2.66747 2.17915 2.17915C2.66746 1.69084 3.32976 1.41651 4.02034 1.41651H29.9765C30.3187 1.41595 30.6577 1.4829 30.974 1.61352C31.2904 1.74414 31.5778 1.93587 31.8199 2.17773C32.0621 2.4196 32.2541 2.70684 32.3851 3.02302C32.516 3.3392 32.5834 3.67811 32.5832 4.02034V29.9765C32.5835 30.3188 32.5164 30.6578 32.3856 30.9741C32.2549 31.2905 32.063 31.5779 31.821 31.82C31.5791 32.0621 31.2917 32.2542 30.9755 32.3851C30.6592 32.5161 30.3202 32.5834 29.9779 32.5832H4.02034C3.67828 32.5832 3.33957 32.5158 3.02357 32.3848C2.70756 32.2539 2.42046 32.062 2.17865 31.82C1.93684 31.5781 1.74507 31.2909 1.6143 30.9748C1.48353 30.6587 1.41632 30.32 1.4165 29.9779V4.02034ZM13.7528 13.2995H17.9731V15.4188C18.5823 14.2005 20.1406 13.104 22.4823 13.104C26.9718 13.104 28.0357 15.5308 28.0357 19.9833V28.2312H23.4924V20.9977C23.4924 18.4618 22.8833 17.031 21.3363 17.031C19.19 17.031 18.2975 18.5738 18.2975 20.9977V28.2312H13.7528V13.2995ZM5.96117 28.0371H10.5058V13.104H5.96117V28.0357V28.0371ZM11.1561 8.23351C11.1647 8.62263 11.0954 9.00954 10.9524 9.37154C10.8094 9.73353 10.5956 10.0633 10.3234 10.3416C10.0512 10.6198 9.72624 10.8408 9.36748 10.9918C9.00872 11.1427 8.62343 11.2204 8.23421 11.2204C7.845 11.2204 7.45971 11.1427 7.10094 10.9918C6.74218 10.8408 6.41718 10.6198 6.14501 10.3416C5.87284 10.0633 5.65899 9.73353 5.516 9.37154C5.37301 9.00954 5.30377 8.62263 5.31234 8.23351C5.32916 7.46972 5.64438 6.74288 6.19051 6.20865C6.73663 5.67441 7.47024 5.37527 8.23421 5.37527C8.99819 5.37527 9.73179 5.67441 10.2779 6.20865C10.824 6.74288 11.1393 7.46972 11.1561 8.23351V8.23351Z" fill="black"/>
+                    </svg>
+                        
+
+                </div>
+
+            </div>
+
+            <form action="https://formsubmit.co/bridgettemanzi@gmail.com" method="POST">
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email" id="emailLabel">Email</label>
+                <input type="email" name="email" required>
+                <label for="msg" id="msgLabel">Message</label>
+                <textarea name="msg" id="msg" cols="30" rows="7"></textarea>
+                <input type="hidden" name="_next" value="/thank you.html">
+
+                <button type="submit" class="but">Send
+                    <svg class="sendIcon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_37_771)">
+                        <path d="M25.7628 0.237371C25.8753 0.350036 25.9522 0.493267 25.984 0.649272C26.0158 0.805277 26.001 0.967181 25.9415 1.11487L16.4857 24.7537C16.4023 24.9619 16.2632 25.1431 16.0835 25.2773C15.9039 25.4115 15.6907 25.4935 15.4674 25.5143C15.2441 25.5351 15.0195 25.494 14.8181 25.3953C14.6167 25.2967 14.4464 25.1444 14.326 24.9552L9.16179 16.8384L1.04492 11.6741C0.855308 11.5538 0.702613 11.3835 0.60368 11.182C0.504747 10.9804 0.463423 10.7554 0.484267 10.5318C0.505111 10.3083 0.587313 10.0948 0.721803 9.91499C0.856293 9.73518 1.03784 9.59602 1.24642 9.51287L24.8853 0.0602463C25.033 0.000791224 25.1949 -0.0139633 25.3509 0.0178155C25.5069 0.0495942 25.6501 0.126506 25.7628 0.238996V0.237371ZM10.7835 16.3639L15.2702 23.4131L22.9613 4.18612L10.7835 16.3639ZM21.8124 3.03725L2.58542 10.7284L9.63629 15.2134L21.814 3.03725H21.8124Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_37_771">
+                        <rect width="26" height="26" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </button>
+
+            </form>
+
+        </section>
+        
+
+    </div>
+
+
+
+
+
+
+    <script>
+
+
+        let path = document.querySelector('.linepath')
+                let pathLength = path.getTotalLength('path')//want whole length of svg, help us set up stroke offset
+
+                path.style.strokeDasharray = pathLength + ' ' + pathLength;
+
+                path.style.strokeDashoffset = pathLength;
+
+                window.addEventListener('scroll', () => {
+
+                    //what % down is it?
+                    //var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+                    var scrollPercentage = (document.documentElement.scrollTop) / (1200 - document.getElementById('landing').clientHeight);
+
+                    //length to offset the dashes
+                    var drawLength = pathLength * scrollPercentage;
+
+                    //draw in reverse
+                    path.style.strokeDashoffset = pathLength - drawLength;
+
+                })
+
+
+
+        const menu = document.querySelector('.menu') //allows us to determain when its clicked
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+
+    </script>
+
+
+<!--javascript for nav. dissapear on scroll down, appear on scroll up-->
+    <!--<script type="text/javascript">
+
+        var lastScrollTop = 0;
+        navbar = document.getElementById('navbar');
+        navlogo = document.getElementById('logo');
+        navpuz = document.getElementById('contactPuzzle');
+        navback = document.getElementById('background');
+
+        window.addEventListener('scroll', function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-50px';
+                //navlogo.style.top = '-50px';
+                navpuz.style.top = '-70px';
+                navback.style.top = '-80px';
+                navlogo.style.top = '.34em';
+            } else {
+                navbar.style.top = '2.3em'
+                //navlogo.style.top = '.34em'
+                navpuz.style.top = '1em'
+                navback.style.top = '0em'
+            }
+
+            lastScrollTop = scrollTop;
+        })
+
+    </script>
+
+
+
+
+-->
+
+
+
+</body>
+</html>
